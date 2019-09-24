@@ -30,7 +30,7 @@ import escola.model.business.ResponseAvisoJson;
  * 
  * A diferença do @Controller é que:  
  * o @RestController faz com que o valor retornado no método (return) seja enviado para o browser no Corpo do Response HTTP
- * @RestController = @Controler + ResponseBody, por isso não precisamos anotar os metodos com @ResponseBody 
+ * @RestController = @Controler + @ResponseBody, por isso não precisamos anotar os metodos com @ResponseBody 
  * 
  * Se o return for um valor STRING, o conteúdo é enviado diretamente ao browser, 
  * sem passar por qualquer pré-processamento do Spring MVC (o Spring não tentará substituir por uma pagina jsp)
