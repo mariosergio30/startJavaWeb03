@@ -156,6 +156,10 @@ public class AlunoDao implements InterfaceCrudDAO<Aluno> {
 
 		Aluno a = null;
 		
+		if (dados == null) {
+			return a;
+		}
+		
 		try {
 			if (dados.first()) { 
 				a = new Aluno();
