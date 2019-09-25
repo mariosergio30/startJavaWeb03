@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "693f8dad-9cb3-4944-973d-04a90f396a1e",
+		"name": "Sistema Escolar API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/aluno/listagem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/aluno/listagem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"aluno",
+						"listagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/aluno/consulta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"matricula\":  \"00000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/aluno/consulta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"aluno",
+						"consulta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/aluno/salvar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Beltrano NOVO SOBRENOME\",\r\n    \"cpf\": \"023.999.999-99\",\r\n    \"sexo\": \"M\",\r\n    \"idade\": 15,\r\n    \"matricula\": \"00000001\",\r\n    \"media\": 0.0,\r\n    \"status\": null,\r\n    \"trabalho\": null,\r\n    \"qtdFaltas\": 0,\r\n    \"escolaridade\": \"MEDIO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/aluno/salvar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"aluno",
+						"salvar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
