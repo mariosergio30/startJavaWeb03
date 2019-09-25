@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import escola.model.entidade.Aluno;
 import escola.model.entidade.Disciplina;
 import escola.model.business.AlunosBusiness;
+import escola.model.business.RequestConsulta;
 import escola.model.business.ResponseAvisoJson;
 
 /* @RestController indica que essa a classe é um controlador WEB (expõe os métodos da classe como recursos web)  
@@ -132,10 +133,10 @@ public class ControlerApi {
 		
 	
 	@RequestMapping( value="aluno/consulta", method = RequestMethod.GET)
-    public Aluno alunoconsulta(@RequestBody String matricula) {
+    public Aluno alunoconsulta(@RequestBody RequestConsulta requestConsulta) {
 	
     	
-        return  alunosBusiness.buscarAluno(matricula);  // @RestController transforma o objeto aluno para o formato JSON
+        return  alunosBusiness.buscarAluno(requestConsulta.getMatricula());  // @RestController transforma o objeto aluno para o formato JSON
     }
 	
 	
