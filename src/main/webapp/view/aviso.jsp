@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
-<img src="../img/logoAccenture.PNG" width="150">
+<img src="../img/logomarca.png" width="150">
 
 <hr>
 <h1>AVISO:</h1>
