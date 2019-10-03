@@ -36,7 +36,7 @@ public final class Aluno extends Pessoa {
 		return trabalho;
 	}
 	
-	public void setTrabalho() {
+	public void setTrabalho(String trabalho) {
 		this.trabalho = trabalho;
 	}
 	
