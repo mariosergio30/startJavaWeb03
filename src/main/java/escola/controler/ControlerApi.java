@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -124,6 +125,7 @@ public class ControlerApi {
 	    
 	
 	// Este recurso somente será acionado em caso de requests pelo metodo GET
+    @CrossOrigin(origins = "*")
 	@RequestMapping( value="aluno/listagem", method = RequestMethod.GET)	  
 	public List<Aluno> alunolisgagem() {
 
@@ -132,6 +134,7 @@ public class ControlerApi {
 	}
 		
 	
+    @CrossOrigin(origins = "*")    
 	@RequestMapping( value="aluno/consulta", method = RequestMethod.GET)
     public Aluno alunoconsulta(@RequestBody RequestConsulta requestConsulta) {
 	

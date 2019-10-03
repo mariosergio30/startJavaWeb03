@@ -97,6 +97,10 @@ public class AlunosBusiness {
 	/* retorna a lista completa de Alunos
 	 matriculados */
 	public List<Aluno> getListAlunos() {
+		
+		System.out.println("Lista de Alunos exibida com Sucesso !");
+		
+		
 		return listAlunos;
 	}
 
