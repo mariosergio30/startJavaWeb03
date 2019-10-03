@@ -17,6 +17,8 @@
 
 <h2>${aviso}</h2>
 
+<a href="/" >VOLTAR</a>
+
 <hr>
 
 </body>

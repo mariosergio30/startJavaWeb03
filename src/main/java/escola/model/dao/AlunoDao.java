@@ -131,6 +131,8 @@ public class AlunoDao implements InterfaceCrudDAO<Aluno> {
 				a.setIdade(dados.getInt("idade"));
 				a.setSexo(dados.getString("sexo"));
 				a.setEscolaridade(dados.getString("escolaridade"));
+				a.setStatus("");
+				a.setTrabalho("N");
 				list.add(a);
 
 			} while (dados.next());
